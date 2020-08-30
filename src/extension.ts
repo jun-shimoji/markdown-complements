@@ -4,17 +4,22 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
 
-		let editor:any = vscode.window.activeTextEditor;
-		let sel = editor.selection;
-		let cursor = editor.selection.active;
+		let editor:any = vscode.window.activeTextEditor; //activeなtexteditorのobject取得
+
+		let position = editor.selection.active;
 		let line = editor.selection.active.line;
-		let text = editor.document.getText(sel);
+		let textLine = editor.document.lineAt(line).text; //lineのテキストを行ごと取得
+
 		editor?.edit((builder: any) => {
-            builder.replace(editor?.selection, text?.toLocaleLowerCase());
+			let startPos = new vscode.Position(line, 0);
+			let endPos = new vscode.Position(line, textLine.length);
+			let myPos = new vscode.Selection(startPos, endPos);
+			builder.delete(myPos); // カーソルのある行を削除
+            builder.replace(editor?.selection, '* ' + textLine?.trim());
         });
-		console.log('cursor: ', cursor);
+		console.log('position: ', position);
 		console.log('line: ', line);
-		vscode.window.showInformationMessage(text);
+		vscode.window.showInformationMessage(textLine);
 	});
 
 	let cmd2 = vscode.commands.registerCommand('extension.calc', () => {

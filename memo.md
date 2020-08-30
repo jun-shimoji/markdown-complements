@@ -1,8 +1,11 @@
 ### memo
+* hello worldを変える
+* ショートカットをつける
+* position のセット方法を見直す
 * 選択しなくてもunorderd list のトグルを変えられるようにする
 * 型付けの警告が大量に発生するので any型にしてひとまず回避
 * カーソルの位置
-	* `let cursor = editor.selection.active;`
+	* `let cursor = editor.selection.active;` 
 	* `let line = editor.selection.active.line;`
 
 ### 開発環境構築
