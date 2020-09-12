@@ -1,14 +1,22 @@
 {
 	"name": "markdown-complements",
-	"displayName": "markdown-complements",
+	"displayName": "markdown shortcut complements ",
+	"publisher": "junsh",
 	"description": "",
+	"author": "junsh",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/jun-shimoji/markdown-complements"
+	},
+	"license": "MIT",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.48.0"
 	},
 	"categories": [
-		"Other"
+		"Formatters"
 	],
+	"keywords": ["markdown"],
 	"activationEvents": [
 		"onCommand:extension.unorderedItemIndent",
 		"onCommand:extension.calc"

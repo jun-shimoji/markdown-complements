@@ -50,3 +50,11 @@ code .
   }]
 },
 ```
+
+* Visual Studio | Marketplace
+* Extension Manifest File
+* Azure DevOpsでPersonal Access Tokenを取得
+    * https://dev.azure.com/junshimoji/
+
+
+
