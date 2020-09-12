@@ -51,10 +51,9 @@ code .
 },
 ```
 
-* Visual Studio | Marketplace
-* Extension Manifest File
+### チートシート
+* Visual Studio Marketplace
+    * https://marketplace.visualstudio.com/
 * Azure DevOpsでPersonal Access Tokenを取得
     * https://dev.azure.com/junshimoji/
-
-
 
