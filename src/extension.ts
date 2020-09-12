@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
 
-	let disposable = vscode.commands.registerCommand('extension.unorderedItemIndent', () => {
+	let disposable = vscode.commands.registerCommand('junsh.extension.unorderedItemIndent', () => {
 
 		let editor:any = vscode.window.activeTextEditor; //activeなtexteditorのobject取得
 		let position   = editor.selection.active;

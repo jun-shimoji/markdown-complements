@@ -1,15 +1,15 @@
 {
 	"name": "markdown-complements",
 	"displayName": "markdown shortcut complements ",
-	"publisher": "junsh",
+	"publisher": "jun-shimoji",
 	"description": "",
-	"author": "junsh",
+	"author": "jun-shimoji",
 	"repository": {
         "type": "git",
         "url": "https://github.com/jun-shimoji/markdown-complements"
 	},
 	"license": "MIT",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.48.0"
 	},
@@ -18,14 +18,14 @@
 	],
 	"keywords": ["markdown"],
 	"activationEvents": [
-		"onCommand:extension.unorderedItemIndent",
+		"onCommand:junsh.extension.unorderedItemIndent",
 		"onCommand:extension.calc"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.unorderedItemIndent",
+				"command": "junsh.extension.unorderedItemIndent",
 				"title": "Hello World"
 			},
 			{
@@ -35,7 +35,7 @@
 		],
         "keybindings": [
             {
-                "command": "extension.unorderedItemIndent",
+                "command": "junsh.extension.unorderedItemIndent",
                 "key": "ctrl+]"
 			}
 		]
